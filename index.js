@@ -1,6 +1,8 @@
 const { Toolkit } = require('actions-toolkit')
 
-// Run your GitHub Action!
-Toolkit.run(async tools => {
-  tools.exit.success('We did it!')
-})
+const tools = new Toolkit({
+  event: [ 'issues', 'pull_requests' ]
+});
+
+
+console.log(tools.context.payload);
