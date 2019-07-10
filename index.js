@@ -9,7 +9,7 @@ Toolkit.run(async tools => {
   tools.log.info(`Trying to load handler: "${handlerRef}"...`);
 
   try {
-    var eventModule = require(join('./lib/handlers', handlerRef));
+    var eventModule = require(`./lib/handlers/${handlerRef}`);
   } catch (e) {
     console.log(e)
     return tools.exit.neutral('Failed to load module for event. No action necessary.');
