@@ -11,6 +11,7 @@ Toolkit.run(async tools => {
   try {
     var eventModule = require(join('./lib/handlers', handlerRef));
   } catch (e) {
+    console.log(e)
     return tools.exit.neutral('Failed to load module for event. No action necessary.');
   }
 
