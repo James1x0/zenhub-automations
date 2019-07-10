@@ -1,16 +1,5 @@
-# Use the latest version of Node.js
-#
-# You may prefer the full image:
-# FROM node
-#
-# or even an alpine image (a smaller, faster, less-feature-complete image):
-# FROM node:alpine
-#
-# You can specify a version:
-# FROM node:10-slim
 FROM node:slim
 
-# Labels for GitHub to read your action
 LABEL "com.github.actions.name"="Zenhub Automations"
 LABEL "com.github.actions.description"="Automate zenhub with ease"
 # Here are all of the available icons: https://feathericons.com/
