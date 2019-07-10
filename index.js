@@ -3,4 +3,4 @@ const { Toolkit } = require('actions-toolkit')
 const tools = new Toolkit();
 
 
-console.log(tools.context.payload);
+console.log(tools.context);
