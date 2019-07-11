@@ -9,7 +9,7 @@
   "dependencies": {
     "actions-toolkit": "^2.1.0",
     "bluebird": "^3.5.5",
-    "node-zenhub": "^1.1.1"
+    "zenhub-client": "^1.0.0"
   },
   "devDependencies": {
     "jest": "^24.5.0"
