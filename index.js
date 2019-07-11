@@ -15,11 +15,11 @@ Toolkit.run(async tools => {
     return tools.exit.neutral('Failed to load module for event. No action necessary.');
   }
 
-  const moduleAction = eventModule[tools.context.payload.action] || eventModule.opened;
+  const moduleAction = eventModule[tools.context.payload.action];
 
-  // if (!moduleAction) {
-  //   return tools.exit.neutral('Failed to find sub handler. No action necessary.');
-  // }
+  if (!moduleAction) {
+    return tools.exit.neutral('Failed to find sub handler. No action necessary.');
+  }
 
   try {
     await moduleAction(tools);
