@@ -3,7 +3,7 @@ FROM node:slim
 LABEL "com.github.actions.name"="Zenhub Automations"
 LABEL "com.github.actions.description"="Automate zenhub with ease"
 # Here are all of the available icons: https://feathericons.com/
-LABEL "com.github.actions.icon"="move"
+LABEL "com.github.actions.icon"="power"
 # And all of the available colors: https://developer.github.com/actions/creating-github-actions/creating-a-docker-container/#label
 LABEL "com.github.actions.color"="gray-dark"
 
