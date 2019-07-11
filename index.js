@@ -15,7 +15,7 @@ Toolkit.run(async tools => {
     return tools.exit.neutral('Failed to load module for event. No action necessary.');
   }
 
-  const moduleAction = eventModule[tools.context.payload.action];
+  const moduleAction = eventModule[tools.context.payload.action] || eventModule[tools.context.payload.ref_type];
 
   console.log(tools.context.payload);
 
