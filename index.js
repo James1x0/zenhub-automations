@@ -12,7 +12,7 @@ Toolkit.run(async tools => {
     var eventModule = require(`./lib/handlers/${handlerRef}`);
   } catch (e) {
     console.log(e)
-    return tools.exit.neutral('Failed to load module for event. No action necessary.');
+    return tools.exit.success('Failed to load module for event. No action necessary.');
   }
 
   const moduleAction = eventModule[tools.context.payload.action] || eventModule[tools.context.payload.ref_type];
@@ -20,7 +20,7 @@ Toolkit.run(async tools => {
   console.log(tools.context.payload);
 
   if (!moduleAction) {
-    return tools.exit.neutral('Failed to find sub handler. No action necessary.');
+    return tools.exit.success('Failed to find sub handler. No action necessary.');
   }
 
   try {
