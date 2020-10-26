@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="gray-dark"
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy the rest of your action's code
 COPY . .
