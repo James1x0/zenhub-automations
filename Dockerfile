@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:12-slim
 
 LABEL "com.github.actions.name"="Zenhub Automations"
 LABEL "com.github.actions.description"="Automate zenhub with ease"
