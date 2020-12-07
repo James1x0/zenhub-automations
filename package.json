@@ -9,7 +9,7 @@
   "dependencies": {
     "actions-toolkit": "^2.1.0",
     "bluebird": "^3.5.5",
-    "zenhub-client": "^1.1.1"
+    "zenhub-client": "^1.1.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
